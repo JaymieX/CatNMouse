@@ -23,6 +23,7 @@ public class Blackboard
             return (T)(_pool[name]);
         }
 
+        Debug.Log("Key" + name + "does not exists");
         return default(T);
     }
 }

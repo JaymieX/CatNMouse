@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 961926319}
   - component: {fileID: 961926320}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 1290723251}
   - component: {fileID: 1290723250}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
