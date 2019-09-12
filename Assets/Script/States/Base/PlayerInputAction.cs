@@ -5,31 +5,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerInputAction", menuName = "ScriptableObjects/Actions/PlayerInputAction")]
 public class PlayerInputAction : ActionLogic
 {
-    public KeyCode Up, Down, Left, Right;
-
     public string VectorKeyName;
 
     public override void Execute(ref BlackboardComponent blackboard)
     {
-        Vector2 vec = new Vector2(0,0);
-        if (Input.GetKey(Up))
-        {
-            vec.y = 1;
-        }
-        if (Input.GetKey(Down))
-        {
-            vec.y = -1;
-        }
-        if (Input.GetKey(Left))
-        {
-            vec.x = -1;
-        }
-        if (Input.GetKey(Right))
-        {
-            vec.x = 1;
-        }
+        Vector3 cursorPos = Input.mousePosition;
+        Vector3 movePos = Camera.main.ScreenToWorldPoint(cursorPos) - blackboard.transform.position;
+        movePos.z = 0;
+        movePos.Normalize();
 
-        vec.Normalize();
-        blackboard.BlackboardData.Insert(VectorKeyName, vec);
+        blackboard.BlackboardData.Insert(VectorKeyName, new Vector2(movePos.x, movePos.y));
     }
 }

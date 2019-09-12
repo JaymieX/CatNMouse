@@ -14,6 +14,6 @@ public class MoveToAction : ActionLogic
         Vector2 vec = blackboard.BlackboardData.At<Vector2>(VectorKeyName);
         float speed = blackboard.BlackboardData.At<float>(SpeedKeyName);
 
-        blackboard.transform.Translate(vec * speed);
+        blackboard.GetComponent<Rigidbody2D>().AddForce(vec * speed);
     }
 }
