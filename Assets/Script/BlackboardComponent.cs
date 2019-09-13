@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlackboardComponent : MonoBehaviour
 {
-    public Blackboard BlackboardData { get; private set; }
+    public Blackboard BlackboardData;
 
     [SerializeField]
     private StateNode _currentNode;
