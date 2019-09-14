@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3abd7eebb179ed14a9a12e722edef53c, type: 3}
-  m_Name: PlayerStateNode
+  m_Name: InvincibleStateNode
   m_EditorClassIdentifier: 
   Conditions:
-  - {fileID: 11400000, guid: 75b70c882ea1a3d4c961eb4a55e299ea, type: 2}
+  - {fileID: 11400000, guid: c4064809ed2e39346b0281314d0cb31e, type: 2}
   Actions:
   - {fileID: 11400000, guid: d65360bc80190fc4488bea966a851a4a, type: 2}
   - {fileID: 11400000, guid: 88592d55892af6a429e1a1746ecef845, type: 2}
-  - {fileID: 11400000, guid: 36c85a734d6894b40a40a84bbdc27aa9, type: 2}

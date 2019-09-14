@@ -9,6 +9,8 @@ public class BlackboardComponent : MonoBehaviour
     [SerializeField]
     private StateNode _currentNode;
 
+    public float TimeSinceState = 0f;
+
     public BlackboardComponent()
     {
         BlackboardData = new Blackboard();
@@ -24,10 +26,13 @@ public class BlackboardComponent : MonoBehaviour
     {
         _currentNode.TestConditions(this);
         _currentNode.ExecuteActions(this);
+
+        TimeSinceState += Time.deltaTime;
     }
 
     public void Transition(StateNode node)
     {
+        TimeSinceState = 0f;
         _currentNode = node;
     }
 }
