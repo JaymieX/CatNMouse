@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentNode: {fileID: 11400000, guid: 71f4ee4206adbae40b6a801df81005b8, type: 2}
+  TimeSinceState: 0
 --- !u!114 &5737248513641945255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +148,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
+  ExpEffect: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9, type: 3}

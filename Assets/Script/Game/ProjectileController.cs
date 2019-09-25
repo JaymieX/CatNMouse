@@ -6,6 +6,10 @@ public class ProjectileController : MonoBehaviour
 {
     public float Speed;
 
+    public GameObject ExpEffect;
+
+    private bool done = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +21,15 @@ public class ProjectileController : MonoBehaviour
         if (transform.position.x < -15)
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (!done)
+        {
+            Instantiate(ExpEffect, col.GetContact(0).point, Quaternion.identity);
+            done = true;
         }
     }
 }
