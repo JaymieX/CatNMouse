@@ -33,5 +33,7 @@ public class ProjectileController : MonoBehaviour
             Instantiate(ExpEffect, col.GetContact(0).point, Quaternion.identity);
             done = true;
         }
+
+        Destroy(gameObject);
     }
 }
