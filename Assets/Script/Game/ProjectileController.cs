@@ -14,6 +14,8 @@ public class ProjectileController : MonoBehaviour
     void Start()
     {
         GetComponent<BlackboardComponent>().BlackboardData.Insert("speed", Speed);
+
+        Physics2D.IgnoreLayerCollision(8, 9);
     }
 
     void Update()

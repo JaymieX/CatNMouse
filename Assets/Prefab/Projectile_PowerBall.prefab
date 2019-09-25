@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5737248513641945272}
   - component: {fileID: 5737248513641945251}
   - component: {fileID: 5737248513641945255}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Projectile_PowerBall
   m_TagString: Projectile
   m_Icon: {fileID: 0}

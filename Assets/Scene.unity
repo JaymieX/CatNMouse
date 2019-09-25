@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 1290723255}
   - component: {fileID: 1290723251}
   - component: {fileID: 1290723250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cat
   m_TagString: Projectile
   m_Icon: {fileID: 0}
